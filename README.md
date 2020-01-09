@@ -1,6 +1,7 @@
 # 꿀단지
 
-Django
+Django //
+
 Flutter
 
 # Update
