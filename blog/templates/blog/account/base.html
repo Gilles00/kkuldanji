@@ -8,6 +8,15 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
+        <ul class="nav navbar-nav navbar-right">
+            {% if user.is_active %}
+            <li><a href="{% url 'login' %}"> <span class="glyphicon glyphicon-heart"></span> {{user.username}}</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}"> <span class="glyphicon glyphicon-user"></span> Login</a></li>
+            <li><a href="{% url 'admin:index' %}">Admin</a></li>
+            {% endif %}
+        </ul>
         <div class="page-header">
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Donchan's Blog</a></h1>

@@ -14,3 +14,5 @@ Flutter
 2020-01-07 / Image Upload
 
 2020-01-09 / Think about make frontend with Flutter
+
+2020-01-12 / Login, Logout, Social Login
