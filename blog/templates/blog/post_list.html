@@ -1,6 +1,9 @@
-{% extends 'blog/account/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
+    {% for image in images %}
+        <img src="{{ uploads }}" alt="{{ image.name }}">
+    {% endfor %}
     {% for post in posts %}
         <div class="post">
             <div class="date">

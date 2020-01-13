@@ -11,8 +11,10 @@ Flutter
 
 2020-01-06 / Create a basic structure
 
-2020-01-07 / Image Upload
+2020-01-07 / Image Upload -fin
 
 2020-01-09 / Think about make frontend with Flutter
 
-2020-01-12 / Login, Logout, Social Login
+2020-01-12 / Login, Logout, Social Login - fin
+
+2020-01-13 / 로그인 해야만 글쓰기 기능 추가 - fin , 이미지 리스트 보여주기 - not fin

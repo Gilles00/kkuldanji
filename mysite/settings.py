@@ -156,3 +156,5 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_REDIRECT_URL = "localhost:8000/post_list"

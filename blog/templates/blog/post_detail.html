@@ -1,4 +1,4 @@
-{% extends 'blog/account/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="post">
@@ -10,6 +10,9 @@
 
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>{{ post.text|linebreaksbr }}</p><br><br>
+        <h3>author</h3>
+        <p>{{ post.author }}</p>
+
     </div>
 {% endblock %}
