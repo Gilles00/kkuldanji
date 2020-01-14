@@ -26,7 +26,7 @@ SECRET_KEY = '#=^sy25k-w1zb0$z@*n*jp_1-=)cw-^gr3vnh1$mi_20nh4)#x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+#ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com']
 
 
 # Application definition
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.kakao',
     'allauth.socialaccount.providers.naver',
     'allauth.socialaccount.providers.google',
+    
 ]
 
 MIDDLEWARE = [
@@ -87,8 +88,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'GGul', # DB명
+        'USER': 'test', # DB 계정이름
+        'PASSWORD' : '1234', # DB 패스워드
+        'HOST': 'localhost', # 호스트이름
+        'PORT': '3306', # DB 포트
+        'OPTIONS': {
+            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
+        }
     }
 }
 
