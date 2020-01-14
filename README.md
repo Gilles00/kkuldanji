@@ -18,3 +18,5 @@ Flutter
 2020-01-12 / Login, Logout, Social Login - fin
 
 2020-01-13 / 로그인 해야만 글쓰기 기능 추가 - fin , 이미지 리스트 보여주기 - not fin
+
+2020-01-14 / 사회적기업가 공고 신청 글쓰기
